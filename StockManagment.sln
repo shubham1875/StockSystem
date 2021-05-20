@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31313.79
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StockManagment", "StockManagment\StockManagment.csproj", "{A978001B-A425-40DF-8065-40D71195E706}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StockManagment.Tests", "StockManagment.Tests\StockManagment.Tests.csproj", "{27D4B0A3-BDD3-46DD-968D-A0635ED7B5EF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A978001B-A425-40DF-8065-40D71195E706}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A978001B-A425-40DF-8065-40D71195E706}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A978001B-A425-40DF-8065-40D71195E706}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A978001B-A425-40DF-8065-40D71195E706}.Release|Any CPU.Build.0 = Release|Any CPU
+		{27D4B0A3-BDD3-46DD-968D-A0635ED7B5EF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{27D4B0A3-BDD3-46DD-968D-A0635ED7B5EF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{27D4B0A3-BDD3-46DD-968D-A0635ED7B5EF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{27D4B0A3-BDD3-46DD-968D-A0635ED7B5EF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A67D26BF-84B6-414B-AFB5-6B32834DC589}
+	EndGlobalSection
+EndGlobal

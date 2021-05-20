@@ -1,0 +1,72 @@
+﻿@model IEnumerable<StockManagment.Models.PurchaseItem>
+@{
+    ViewBag.Title = "OrderDetails";
+}
+<h2>Order Details</h2>
+<p>
+    @Html.ActionLink("Place New Order", "PurchaseItems", "Item", new { }, new { @class = "btn btn-primary" })
+</p>
+<div class="table-responsive">
+    <table class="table table-striped table-dark table-hover">
+        <thead>
+            <tr>
+                <th scope="col">
+                    @Html.DisplayName("Custmer Name")
+                </th>
+                <th scope="col">
+                    @Html.DisplayName("Custmer Email")
+                </th>
+                <th scope="col">
+                    @Html.DisplayName("Phone Number")
+                </th>
+                <th scope="col">
+                    @Html.DisplayName("Dilevery Address")
+                </th>
+                <th scope="col">
+                    @Html.DisplayName("Product Name")
+                </th>
+                <th scope="col">
+                    @Html.DisplayName("Product Quantity")
+                </th>
+                <th scope="col">
+                    @Html.DisplayName("Purchase Date")
+                </th>
+                <th scope="col">
+                    @Html.DisplayName("Purchase Staus")
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.CustmorName)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.CustmorEmail)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.CustmorPhoneNumber)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.CustmorDileveryAddress)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.ItemName)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.ItemQuantity)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.ItemPurchaseDate)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.ItemPurchaseStaus)
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
+

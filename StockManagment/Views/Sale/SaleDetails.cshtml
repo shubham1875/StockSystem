@@ -1,0 +1,36 @@
+﻿@model StockManagment.Models.Sale
+
+<div>
+    <h4>Sale</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayName("Sale Product")
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SaleProduct)
+        </dd>
+
+        <dt>
+            @Html.DisplayName("Sale Quantity")
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SaleQuantity)
+        </dd>
+
+        <dt>
+            @Html.DisplayName("Sale Date")
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SaleDate)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "UpdateSale", "Sale", new { id = Model.id }, new { @class = "btn btn-primary" }) |
+    @Html.ActionLink("Cancel", "DisplaySale", "Sale", new { @class = "btn btn-danger" })
+</p>

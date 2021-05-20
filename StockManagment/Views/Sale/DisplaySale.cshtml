@@ -1,0 +1,45 @@
+﻿@model IEnumerable<StockManagment.Models.Sale>
+@{
+    ViewBag.Title = "DisplaySales";
+}
+<h2>Display Sales</h2>
+<p>
+    @Html.ActionLink("Create New", "SaleProduct", "Sale", new { }, new { @class = "btn btn-primary" })
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayName("Sale Product")
+        </th>
+        <th>
+            @Html.DisplayName("Sale Quantity")
+        </th>
+        <th>
+            @Html.DisplayName("Sale Date")
+        </th>
+        <th>
+            @Html.DisplayName("Sale Actions")
+        </th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.SaleProduct)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.SaleQuantity)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.SaleDate)
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "UpdateSale", "Sale", new { id = item.id }, new { @class = "btn btn-primary" }) |
+                @Html.ActionLink("Details", "SaleDetails", "Sale", new { id = item.id }, new { @class = "btn btn-success" }) |
+                @Html.ActionLink("Delete", "DeleteSale", "Sale", new { id = item.id }, new { @class = "btn btn-danger" })
+            </td>
+        </tr>
+    }
+
+</table>
